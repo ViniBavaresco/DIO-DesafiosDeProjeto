@@ -1,5 +1,5 @@
 # Repositório do Desafio de Projeto sobre Git e GitHub da DIO
-Desafio de Projeto sobre Git/Github
+Repositório destinado a exercícios, projetos, desafios e treinamento prático dos conhecimentos adquiridos através do Santander Bootcamp Fullstack Developer da DIO.
 
-## Veja Aqui:
+## Saiba mais:
 - [Síntaxes básicas de Markdown](https://www.markdownguide.org/basic-syntax/)
