@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-wrap</title>
+
+    <style>
+        .container {
+            display: flex;
+            margin: 50px;
+            padding: 50px 0px;
+            justify-content: space-around;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            padding: 50px;
+        }
+
+        .flex_container_row {
+            display: flex;
+            height: 150px;
+            border: 2px solid black;
+            max-width: 300px;
+            flex-direction: row;
+        }
+
+        .flex_container_column {
+            display: flex;
+            height: 170px;
+            border: 2px solid black;
+            max-width: 310px;
+            flex-direction: column;
+        }
+
+        .flex_item_row {
+            font-size: 24px;
+            height: 50%;
+            min-width: 85px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .flex_item_column {
+            font-size: 24px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            max-width: 98%;
+        }
+
+        .title_margin_bottom {
+            margin-bottom: 50px;
+            color: rgb(0, 17, 255);
+        }
+
+        .margin_bottom {
+            margin-bottom: 50px;
+        }
+
+
+        .row {
+            flex-direction: row;
+        }
+
+        .nowrap {
+            flex-wrap: nowrap;
+        }
+
+        .wrap {
+            flex-wrap: wrap;
+        }
+
+        .wrap_reverse {
+            flex-wrap: wrap-reverse;
+        }
+
+        .blue {
+            background: blue;
+        }
+
+        .green {
+            background: green;
+        }
+
+        .orange {
+            background: rgb(255, 94, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="column">
+            <h1 class="title_margin_bottom">Utilizando wrap com rows</h1>
+
+            <h2>No Wrap</h2>
+            <div class="flex_container_row nowrap margin_bottom">
+                <div class="flex_item_row blue">1</div>
+                <div class="flex_item_row green">2</div>
+                <div class="flex_item_row orange">3</div>
+                <div class="flex_item_row blue">4</div>
+            </div>
+
+            <h2>Wrap</h2>
+            <div class="flex_container_row wrap margin_bottom">
+                <div class="flex_item_row blue">1</div>
+                <div class="flex_item_row green">2</div>
+                <div class="flex_item_row orange">3</div>
+                <div class="flex_item_row orange">4</div>
+            </div>
+
+            <h2>Wrap Reverse</h2>
+            <div class="flex_container_row wrap_reverse margin_bottom">
+                <div class="flex_item_row blue">1</div>
+                <div class="flex_item_row green">2</div>
+                <div class="flex_item_row orange">3</div>
+                <div class="flex_item_row orange">4</div>
+            </div>
+        </div>
+
+        <div class="column">
+            <h1 class="title_margin_bottom">Utilizando wrap com columns</h1>
+            <h2>No Wrap</h2>
+            <div class="flex_container_column nowrap margin_bottom">
+                <div class="flex_item_column blue">1</div>
+                <div class="flex_item_column green">2</div>
+                <div class="flex_item_column orange">3</div>
+                <div class="flex_item_column blue">4</div>
+            </div>
+
+            <h2>Wrap</h2>
+            <div class="flex_container_column wrap margin_bottom">
+                <div class="flex_item_column blue">1</div>
+                <div class="flex_item_column green">2</div>
+                <div class="flex_item_column orange">3</div>
+                <div class="flex_item_column orange">4</div>
+            </div>
+
+            <h2>Wrap Reverse</h1>
+                <div class="flex_container_column wrap_reverse margin_bottom">
+                    <div class="flex_item_column blue">1</div>
+                    <div class="flex_item_column green">2</div>
+                    <div class="flex_item_column orange">3</div>
+                    <div class="flex_item_column orange">4</div>
+                </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-content</title>
+
+    <style>
+        .container {
+            height: 400px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        .item {
+            background-color: brown;
+            padding: 0 5px;
+            flex: 1;
+            margin: 5px;
+            text-align: center;
+            color: aliceblue;
+        }
+
+        .stretch {
+            align-content: stretch;
+        }
+
+        .center {
+            align-content: center;
+        }
+
+        .flex-start {
+            align-content: flex-start;
+        }
+
+        .flex-end {
+            align-content: flex-end;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <p>stretch</p>
+    <div class="container stretch">
+        <div class="item">Lorem ipsumdolor sit amet. At modi Quisui</div>
+        <div class="item">Lorem ipsupsum dolm dolor</div>
+        <div class="item">Lorem ipsum dolor sit amet. At modi Quisui</div>
+        <div class="item">Lorem ipsum dolor sit amet. At modi Quisui voluptatem modi Quisui</div>
+        <div class="item">Loremipsum dolpsum dolpsum dolpsum dolor</div>
+        <div class="item">Lorem ipsum dpsum dololor </div>
+        <div class="item">Lorem ipsum dolor siti Quisui</div>
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+        <div class="item">Lorem ipsumdolor sit amet. At modi Quisui</div>
+        <div class="item">Lorem ipsupsum dolm dolor</div>
+        <div class="item">Lorem ipsum dolor sit amet. At modi Quisui</div>
+        <div class="item">Lorem ipsum dolor sit amet. At modi Quisui voluptatem modi Quisui</div>
+        <div class="item">Loremipsum dolpsum dolpsum dolpsum dolor</div>
+        <div class="item">Lorem ipsum dpsum dololor </div>
+        <div class="item">Lorem ipsum dolor siti Quisui</div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="item">Lorem ipsumdolor sit amet. At modi Quisui</div>
+        <div class="item">Lorem ipsupsum dolm dolor</div>
+        <div class="item">Lorem ipsum dolor sit amet. At modi Quisui</div>
+        <div class="item">Lorem ipsum dolor sit amet. At modi Quisui voluptatem modi Quisui</div>
+        <div class="item">Loremipsum dolpsum dolpsum dolpsum dolor</div>
+        <div class="item">Lorem ipsum dpsum dololor </div>
+        <div class="item">Lorem ipsum dolor siti Quisui</div>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container flex-end">
+        <div class="item">Lorem ipsumdolor sit amet. At modi Quisui</div>
+        <div class="item">Lorem ipsupsum dolm dolor</div>
+        <div class="item">Lorem ipsum dolor sit amet. At modi Quisui</div>
+        <div class="item">Lorem ipsum dolor sit amet. At modi Quisui voluptatem modi Quisui</div>
+        <div class="item">Loremipsum dolpsum dolpsum dolpsum dolor</div>
+        <div class="item">Lorem ipsum dpsum dololor </div>
+        <div class="item">Lorem ipsum dolor siti Quisui</div>
+    </div>
+
+    <p>space-around</p>
+    <div class="container space-around">
+        <div class="item">Lorem ipsumdolor sit amet. At modi Quisui</div>
+        <div class="item">Lorem ipsupsum dolm dolor</div>
+        <div class="item">Lorem ipsum dolor sit amet. At modi Quisui</div>
+        <div class="item">Lorem ipsum dolor sit amet. At modi Quisui voluptatem modi Quisui</div>
+        <div class="item">Loremipsum dolpsum dolpsum dolpsum dolor</div>
+        <div class="item">Lorem ipsum dpsum dololor </div>
+        <div class="item">Lorem ipsum dolor siti Quisui</div>
+    </div>
+
+    <p>space-between</p>
+    <div class="container space-between">
+        <div class="item">Lorem ipsumdolor sit amet. At modi Quisui</div>
+        <div class="item">Lorem ipsupsum dolm dolor</div>
+        <div class="item">Lorem ipsum dolor sit amet. At modi Quisui</div>
+        <div class="item">Lorem ipsum dolor sit amet. At modi Quisui voluptatem modi Quisui</div>
+        <div class="item">Loremipsum dolpsum dolpsum dolpsum dolor</div>
+        <div class="item">Lorem ipsum dpsum dololor </div>
+        <div class="item">Lorem ipsum dolor siti Quisui</div>
+    </div>
+
+</body>
+
+</html>
