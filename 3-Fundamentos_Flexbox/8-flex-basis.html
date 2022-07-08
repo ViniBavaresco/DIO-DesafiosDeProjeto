@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-basis</title>
+    <style>
+        .flex-container {
+            max-width: 500px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item {
+            background-color: coral;
+            color: aliceblue;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .bauto {
+            flex-basis: auto;
+        }
+
+        .b-0 {
+            flex-basis: 0;
+        }
+
+        .fg-1 {
+            flex-grow: 1;
+        }
+
+        .fg-2 {
+            flex-grow: 2;
+        }
+
+        .w100 {
+            flex-basis: 100px;
+        }
+
+        .wrap{
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <p>basis auto</p>
+    <div class="flex-container">
+        <div class="item bauto fg-1">A</div>
+        <div class="item bauto fg-1">BBB</div>
+        <div class="item bauto fg-1">C</div>
+        <div class="item bauto fg-2">DEF</div>
+    </div>
+
+    <p>basis 0 (zero)</p>
+    <div class="flex-container">
+        <div class="item b-0 fg-1">A</div>
+        <div class="item b-0 fg-1">BBB</div>
+        <div class="item b-0 fg-1">C</div>
+        <div class="item b-0 fg-1">DEF</div>
+    </div>
+
+    <p>basis + width</p>
+    <div class="flex-container">
+        <div class="item w100">AA</div>
+        <div class="item w100">BBB</div>
+        <div class="item w100">CCC</div>
+        <div class="item w100">DEF</div>
+    </div>
+
+    <p>basis + width (nowrap - desrespeitando o width definido)</p>
+    <div class="flex-container">
+        <div class="item w100">AA</div>
+        <div class="item w100">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="item w100">CCC</div>
+        <div class="item w100">DEF</div>
+    </div>
+
+    <p>basis + width + wrap (desrespeitando o width definido)</p>
+    <div class="flex-container wrap">
+        <div class="item w100">AA</div>
+        <div class="item w100">BBBBBBBBBBBBBBBBBBBB</div>
+        <div class="item w100">CCC</div>
+        <div class="item w100">DEF</div>
+    </div>
+
+    <p>basis + width + grow 1</p>
+    <div class="flex-container">
+        <div class="item w100 fg-1">AA</div>
+        <div class="item w100 fg-1">BBB</div>
+        <div class="item w100 fg-1">CCC</div>
+        <div class="item w100 fg-1">DEF</div>
+    </div>
+
+    <p>basis + width + grow 1 e 2</p>
+    <div class="flex-container">
+        <div class="item w100">AA</div>
+        <div class="item w100">BBB</div>
+        <div class="item w100 fg-1">CCC</div>
+        <div class="item w100 fg-2">DEF</div>
+    </div>
+</body>
+
+</html>
