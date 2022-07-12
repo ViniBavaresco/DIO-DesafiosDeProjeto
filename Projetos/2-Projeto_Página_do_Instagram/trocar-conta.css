@@ -9,13 +9,12 @@
 
 body {
     width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
     background-color: rgb(243, 243, 243);
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .instagram-wrapper {
@@ -37,12 +36,13 @@ body {
     height: 50rem;
 }
 
-.instagram-continue {
+.instagram-trocar {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
     width: 50%;
+    margin-top: 50px;
     min-height: 38rem;
 }
 
@@ -53,8 +53,9 @@ body {
     flex-direction: column;
     background-color: #ffffff;
     width: 350px;
-    padding: 1.3rem 0;
+    padding: 1.8rem;
     border: 1px solid lightgray;
+    margin-bottom: 10px;
 }
 
 .group:nth-child(1) {
@@ -62,39 +63,74 @@ body {
 }
 
 .instagram-logo {
-    height: 3rem;
+    height: 3.9rem;
+    margin-top: 10px;
+    margin-bottom: 35px;
 }
 
-.profile-photo {
+.btn-entrar {
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.profile-photo img {
-    height: 6rem;
-}
-
-.instagram-login {
     background-color: #0095f6;
+    width: 266px;
     color: #ffffff;
+    padding: 20px 0;
+    font-weight: 600;
+    font-size: 14px;
     padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 4px;
 }
 
-.instagram-logout {
-    color: #0095f6;
-    margin-top: 1rem;
+.logar-facebook {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    color: #3A5796;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+.logar-facebook p {
+    font-weight: 500;
+}
+
+.logar-facebook i {
+    margin-right: 5px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .not-account {
-    color: rgb(160, 160, 160);
+    color: #000;
+}
+
+.separacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    width: 335px;
+}
+
+.separacao hr {
+    width: 34%;
+}
+
+.separacao p {
+    margin: 0 10px;
+    color: #8E8E8E;
+    font-weight: 500;
 }
 
 .link-blue {
     color: #0095f6;
+}
+
+.link-black {
+    color: #000;
+    font-size: 12px;
 }
 
 .get-the-app {
@@ -103,7 +139,11 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 1.3rem 0;
+    padding: 0.8rem 0;
+}
+
+.get-the-app p {
+    margin-bottom: 10px;
 }
 
 .download {
@@ -128,6 +168,50 @@ body {
     background-image: url('./img/googleplay-button.png');
 }
 
+.label-float {
+    position: relative;
+    padding-top: 13px;
+    width: 266px;
+    height: 36px;
+    margin-bottom: 5px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+}
+
+.label-float input {
+    border: 0;
+    outline: none;
+    width: 90%;
+    align-items: center;
+    margin-left: 9px;
+    font-size: 13px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-appearance: none;
+}
+
+.label-float label {
+    pointer-events: none;
+    font-size: 11px;
+    position: absolute;
+    color: rgb(133, 133, 133);
+    top: 0;
+    margin-left: 7px;
+    left: 0;
+    margin-top: 9px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+}
+
+.label-float input:focus+label,
+.label-float input:not(:placeholder-shown)+label {
+    font-size: 9px;
+    margin-top: 2px;
+    color: rgb(133, 133, 133);
+}
+
 /* media queries */
 
 
@@ -150,7 +234,7 @@ body {
         display: none;
     }
 
-    .instagram-continue {
+    .instagram-trocar {
         width: 100%;
     }
 

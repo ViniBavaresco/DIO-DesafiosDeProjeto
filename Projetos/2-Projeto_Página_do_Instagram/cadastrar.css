@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagram-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+}
+
+.instagram-cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    max-width: 350px;
+    min-height: 38rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 350px;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.instagram-logo {
+    height: 4rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.titulo-cadastro {
+    display: flex;
+    width: 65%;
+    margin-bottom: 15px;
+    justify-content: center;
+    text-align: center;
+    color: #8E8E8E;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+.texto-cadastro {
+    width: 75%;
+}
+
+.texto-cadastro p {
+    margin-bottom: 10px;
+    color: #8E8E8E;
+    text-align: center;
+}
+
+.texto-cadastro p a {
+    color: #8E8E8E;
+    font-weight: 600;
+}
+
+.separacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    width: 350px;
+}
+
+.separacao hr {
+    width: 34%;
+}
+
+.separacao p {
+    margin: 0 10px;
+    color: #8E8E8E;
+}
+
+.login-facebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+    width: 80%;
+    text-align: center;
+}
+
+.login-facebook i {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.btn-cadastrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+    width: 80%;
+    text-align: center;
+}
+
+.instagram-logout {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account {
+    color: rgb(160, 160, 160);
+}
+
+.link-blue {
+    color: #0095F6;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('./img/apple-button.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./img/googleplay-button.png');
+}
+
+.label-float {
+    position: relative;
+    padding-top: 13px;
+    width: 266px;
+    height: 36px;
+    margin-bottom: 10px;
+    border: 2px solid #DBDBDB;
+    border-radius: 5px;
+}
+
+.label-float input {
+    border: 0;
+    outline: none;
+    width: 90%;
+    align-items: center;
+    margin-left: 5px;
+    font-size: 13px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-appearance: none;
+}
+
+.label-float:focus {
+    border: 2px solid #A2A2A2;
+}
+
+.label-float input::placeholder {
+    color: transparent;
+}
+
+.label-float label {
+    pointer-events: none;
+    position: absolute;
+    color: #A2A2A2;
+    top: 0;
+    margin-left: 5px;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+}
+
+.label-float input:focus+label,
+.label-float input:not(:placeholder-shown)+label {
+    font-size: 11px;
+    margin-top: 2px;
+    color: #A2A2A2;
+}
+
+/* media queries */
+
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-cadastro {
+        width: 100%;
+    }
+
+    .group {
+        border: 1px solid transparent;
+    }
+}
