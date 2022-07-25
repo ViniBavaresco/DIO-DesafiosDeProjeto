@@ -10,9 +10,12 @@
   "author": "Vinicius Bavaresco",
   "license": "MIT",
   "dependencies": {
+    "@angular/core": "^14.1.0",
+    "jquery": "^3.6.0",
     "parcel-bundler": "^1.12.5"
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.14",
     "typescript": "^4.7.4"
   }
 }
