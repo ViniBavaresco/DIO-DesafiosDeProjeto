@@ -1,0 +1,58 @@
+<h2>Course Form</h2>
+
+<form #courseForm="ngForm" (ngSubmit)="save()">
+  <div class="row g-3">
+    <div class="col-12">
+      <label for="name" class="col-form-label">Name</label>
+      <input required
+             type="text"
+             class="form-control"
+             name="name"
+             id="name"
+             #name="ngModel"
+             [(ngModel)]="course.name"
+             [ngClass]="{'is-invalid': name.invalid && name.touched}">
+      <span class="invalid-feedback">Course name is required</span>
+    </div>
+    <div class="col-12">
+      <label for="price" class="col-form-label">price</label>
+      <input required
+             type="number"
+             class="form-control"
+             name="price"
+             id="price"
+             #price="ngModel"
+             [(ngModel)]="course.price"
+             [ngClass]="{'is-invalid': price.invalid && price.touched}">
+      <span class="invalid-feedback">Course price is required</span>
+    </div>
+    <div class="col-12">
+      <label for="rating" class="col-form-label">rating</label>
+      <input required
+             type="number"
+             class="form-control"
+             name="rating"
+             id="rating"
+             #rating="ngModel"
+             [(ngModel)]="course.rating"
+             [ngClass]="{'is-invalid': rating.invalid && rating.touched}">
+      <span class="invalid-feedback">Course rating is required</span>
+    </div>
+    <div class="col-12">
+      <label for="description" class="col-form-label">description</label>
+      <textarea required
+             type="text"
+             class="form-control"
+             name="description"
+             id="description"
+             #description="ngModel"
+             [(ngModel)]="course.description"
+                [ngClass]="{'is-invalid': description.invalid && description.touched}"> </textarea>
+      <span class="invalid-feedback">Course description is required</span>
+    </div>
+    <div class="col-12">
+      <button [disabled]="courseForm.invalid" class="btn btn-primary me-2"> Save </button>
+      <a class="btn btn-light" [routerLink]="['/']"> Back </a>
+    </div>
+  </div>
+</form>
