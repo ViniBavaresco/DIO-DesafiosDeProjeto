@@ -50,9 +50,9 @@
                 [ngClass]="{'is-invalid': description.invalid && description.touched}"> </textarea>
       <span class="invalid-feedback">Course description is required</span>
     </div>
-    <div class="col-12">
-      <button [disabled]="courseForm.invalid" class="btn btn-primary me-2"> Save </button>
+    <div class="d-flex justify-content-center mt-4 mb-5">
       <a class="btn btn-light" [routerLink]="['/']"> Back </a>
+      <button [disabled]="courseForm.invalid" class="btn btn-primary me-2"> Save </button>
     </div>
   </div>
 </form>
