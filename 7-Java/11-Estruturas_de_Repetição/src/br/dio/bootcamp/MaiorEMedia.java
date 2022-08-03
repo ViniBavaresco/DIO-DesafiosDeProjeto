@@ -1,6 +1,9 @@
 package br.dio.bootcamp;
 
-//Faça um programa que leia 5 números e informe o maior número e a média desses números.
+/*
+ Faça um programa que leia 5 números e informe o maior número 
+ e a média desses números.
+*/
 
 import java.util.Scanner;
 
@@ -24,10 +27,10 @@ public class MaiorEMedia {
 				maior = numero; // atribua o valor deste número a variável maior.
 			}
 
-			soma = soma + numero; // some o número informado pelo usuário com variável soma (independente do
+			soma += numero; // some o número informado pelo usuário com variável soma (independente do
 									// valor)
 
-			count = count + 1; // some o valor 1 ao contador, até que invalide a condição do loop. (count < 5)
+			count += 1; // some o valor 1 ao contador, até que invalide a condição do loop. (count < 5)
 		} while (count < 5); // enquanto o contador tiver o valor menor que 5
 
 		media = soma / 5; // faça o cálculo da média. (soma/quantidade)
